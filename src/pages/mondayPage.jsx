@@ -13,7 +13,7 @@ export default function MondayPage() {
     {id: 6, title: "Crunch"},
   ]
 
-  const numberOfSets = 7
+  const numberOfSets = 8
 
   const [inputs, setInputs] = useState(
     listData.reduce((acc, exercise) => {
@@ -21,8 +21,6 @@ export default function MondayPage() {
       return acc
     }, {})
   )
-
-  console.log("inputs:", inputs)
 
   const handleChange = (exerciseId, setIndex, value) => {
     const validValue = Math.min(Math.max(Number(value), 0), 15).toString()
@@ -54,13 +52,13 @@ export default function MondayPage() {
               <th
                 scope="col"
                 className="px-6 py-3">
-                List
+                SET
               </th>
               {[...Array(numberOfSets)].map((_, index) => (
                 <th
                   key={index}
                   scope="col"
-                  className="px-6 py-3 text-center">{`SET ${index + 1}`}</th>
+                  className="px-6 py-3 text-center">{`${index + 1}`}</th>
               ))}
 
               <th className="px-6 py-3 text-center">success</th>
