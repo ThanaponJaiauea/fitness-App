@@ -34,7 +34,10 @@ export default function MondayPage() {
   }, [inputs])
 
   const handleChange = (exerciseId, setIndex, value) => {
-    const validValue = Math.min(Math.max(Number(value), 0), 15).toString()
+    // const validValue = Math.min(Math.max(Number(value), 0), 15).toString()
+
+    const validValue =
+      value === "" ? "" : Math.min(Math.max(Number(value), 0), 15).toString()
 
     setInputs((prevInputs) => ({
       ...prevInputs,
