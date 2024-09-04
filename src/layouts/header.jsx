@@ -17,6 +17,7 @@ export default function HeaderNavbar() {
   const currentDay = days[new Date().getDay() - 1]
 
   const [selectDay, setSelectDay] = useState(currentDay)
+  // console.log("selectDay:", selectDay)
 
   const navigate = useNavigate()
   const location = useLocation()
@@ -39,13 +40,13 @@ export default function HeaderNavbar() {
                 <Link
                   to={`/${el}`}
                   onClick={() => setSelectDay(el)}
-                  className={`py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white ${
+                  className={`py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0  ${
                     selectDay === el
                       ? "dark:text-blue-500"
                       : el
-                      ? "hover:dark:text-blue-500"
+                      ? "dark:text-white hover:dark:text-blue-500"
                       : null
-                  }`}>
+                  } ${selectDay === el ? "bg-red-200" : ""}`}>
                   {el}
                 </Link>
               </li>
