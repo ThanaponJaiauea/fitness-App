@@ -1,6 +1,6 @@
 /** @format */
 
-import {useState} from "react"
+import {useEffect, useState} from "react"
 import {FaCheck} from "react-icons/fa"
 
 export default function MondayPage() {
@@ -15,12 +15,23 @@ export default function MondayPage() {
 
   const numberOfSets = 8
 
-  const [inputs, setInputs] = useState(
-    listData.reduce((acc, exercise) => {
-      acc[exercise.id] = Array(numberOfSets).fill("")
-      return acc
-    }, {})
-  )
+  // Load saved data from localStorage for Monday
+  const initialInputs = () => {
+    const savedData = localStorage.getItem("MondayInputs")
+
+    return savedData
+      ? JSON.parse(savedData)
+      : listData.reduce((acc, exercise) => {
+          acc[exercise.id] = Array(numberOfSets).fill("")
+          return acc
+        }, {})
+  }
+
+  const [inputs, setInputs] = useState(initialInputs)
+
+  useEffect(() => {
+    localStorage.setItem("MondayInputs", JSON.stringify(inputs))
+  }, [inputs])
 
   const handleChange = (exerciseId, setIndex, value) => {
     const validValue = Math.min(Math.max(Number(value), 0), 15).toString()
@@ -61,7 +72,9 @@ export default function MondayPage() {
                   className="px-6 py-3 text-center">{`${index + 1}`}</th>
               ))}
 
-              <th className="px-6 py-3 text-center">success</th>
+              <th className="px-6 py-3 text-center text-green-600 font-bold">
+                success
+              </th>
             </tr>
           </thead>
 
