@@ -4,12 +4,12 @@ import FromTable from "../components/fromTable"
 
 export default function FridayPage() {
   const data = [
-    {id: 1, title: "Seated Dumbbell Press"},
-    {id: 2, title: "Side Lateral Raise"},
-    {id: 3, title: "Bent-Over Lateral Raise"},
-    {id: 4, title: "Rope Front Raise"},
-    {id: 5, title: "Standing Calf Raise"},
-    {id: 6, title: "Seated Calf Raise"},
+    {id: 1, title: "Barbell Curl"},
+    {id: 2, title: "Incline Dumbbell Curl"},
+    {id: 3, title: "One-Arm Cable Curl"},
+    {id: 4, title: "Tricep Cable Pushdown"},
+    {id: 5, title: "Lying Tricep Extension"},
+    {id: 6, title: "One-Arm Dumbbell Kickback"},
   ]
 
   return (
