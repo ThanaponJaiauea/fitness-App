@@ -4,7 +4,7 @@ import FromTable from "../components/fromTable"
 
 export default function FridayPage() {
   const data = [
-    {id: 1, title: "Barbell Curl"},
+    {id: 1, title: "Barbell Curl", images: ["ss"]},
     {id: 2, title: "Incline Dumbbell Curl"},
     {id: 3, title: "One-Arm Cable Curl"},
     {id: 4, title: "Tricep Cable Pushdown"},
