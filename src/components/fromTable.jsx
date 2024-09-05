@@ -7,7 +7,6 @@ export default function FromTable({data, dayKey}) {
   const numberOfSets = 8
 
   const [openSeeMore, setOpenSeeMore] = useState(false)
-  console.log("openSeeMore:", openSeeMore)
 
   // Load saved data from localStorage for Monday
   const initialInputs = () => {
