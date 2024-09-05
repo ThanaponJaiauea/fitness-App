@@ -6,6 +6,8 @@ import {FaCheck} from "react-icons/fa"
 export default function FromTable({data, dayKey}) {
   const numberOfSets = 8
 
+  const [seeMore, setSeeMore] = useState(false)
+
   // Load saved data from localStorage for Monday
   const initialInputs = () => {
     const savedData = localStorage.getItem(`${dayKey}`)
@@ -72,8 +74,9 @@ export default function FromTable({data, dayKey}) {
               className="bg-white dark:bg-gray-800">
               <th
                 scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                className="flex flex-col items-start gap-2 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                 {el.title}
+                <button className="hover:text-red-400">ดูเพิ่มเติม</button>
               </th>
 
               {[...Array(numberOfSets)].map((_, index) => (
