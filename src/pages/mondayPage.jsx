@@ -20,7 +20,10 @@ export default function MondayPage() {
         </p>
       </div>
 
-      <FromTable data={data} />
+      <FromTable
+        data={data}
+        dayKey="Monday"
+      />
     </div>
   )
 }

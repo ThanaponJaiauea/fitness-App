@@ -3,12 +3,12 @@
 import {useEffect, useState} from "react"
 import {FaCheck} from "react-icons/fa"
 
-export default function FromTable({data}) {
+export default function FromTable({data, dayKey}) {
   const numberOfSets = 8
 
   // Load saved data from localStorage for Monday
   const initialInputs = () => {
-    const savedData = localStorage.getItem("MondayInputs")
+    const savedData = localStorage.getItem(`${dayKey}`)
 
     return savedData
       ? JSON.parse(savedData)
@@ -21,8 +21,8 @@ export default function FromTable({data}) {
   const [inputs, setInputs] = useState(initialInputs)
 
   useEffect(() => {
-    localStorage.setItem("MondayInputs", JSON.stringify(inputs))
-  }, [inputs])
+    localStorage.setItem(`${dayKey}`, JSON.stringify(inputs))
+  }, [inputs, dayKey])
 
   const handleChange = (exerciseId, setIndex, value) => {
     // const validValue = Math.min(Math.max(Number(value), 0), 15).toString()
@@ -41,6 +41,7 @@ export default function FromTable({data}) {
   const allSetsFilled = (id) => {
     return inputs[id].every((value) => value === "15")
   }
+
   return (
     <div className="relative overflow-x-auto">
       <table className="w-[90%] m-auto text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
