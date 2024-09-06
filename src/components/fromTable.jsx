@@ -3,7 +3,6 @@
 import {useEffect, useState} from "react"
 import {FaCheck} from "react-icons/fa"
 import {Link} from "react-router-dom"
-import video1 from "../videos/Minecraft.mp4"
 
 export default function FromTable({data, dayKey}) {
   const numberOfSets = 8
@@ -71,7 +70,7 @@ export default function FromTable({data, dayKey}) {
           </tr>
         </thead>
 
-        <tbody>
+        <tbody className="bg">
           {data.map((el) => (
             <tr
               key={el.id}
@@ -87,7 +86,7 @@ export default function FromTable({data, dayKey}) {
                     setOpenSeeMore(true)
                   }}
                   className="hover:text-red-400">
-                  ดูเพิ่มเติม
+                  how to play ?
                 </button>
               </th>
 
@@ -122,8 +121,8 @@ export default function FromTable({data, dayKey}) {
           <div className="relative p-4 w-full max-w-2xl max-h-full">
             <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <div className="w-full text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                <div className="w-full text-center relative">
+                  <h3 className="text-xl font-semibold text-white">
                     {selectedExercise.title}
                   </h3>
                 </div>
@@ -131,7 +130,7 @@ export default function FromTable({data, dayKey}) {
                 <button
                   onClick={() => setOpenSeeMore(false)}
                   type="button"
-                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white">
+                  className="absolute right-5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white">
                   <svg
                     className="w-3 h-3"
                     aria-hidden="true"
@@ -149,14 +148,15 @@ export default function FromTable({data, dayKey}) {
                 </button>
               </div>
 
-              <div className="text-center p-2 text-white">
+              <div className="text-center p-5">
                 <video
+                  className="rounded-xl"
                   playsInline
                   muted
                   loop
                   controls={true}>
                   <source
-                    src={video1}
+                    src={selectedExercise?.videos}
                     type="video/mp4"
                   />
                 </video>

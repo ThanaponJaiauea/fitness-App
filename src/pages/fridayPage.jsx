@@ -1,6 +1,7 @@
 /** @format */
 
 import FromTable from "../components/fromTable"
+import video1 from "../videos/Minecraft.mp4"
 
 export default function FridayPage() {
   const data = [
@@ -15,6 +16,7 @@ export default function FridayPage() {
         "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
         "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
       ],
+      videos: video1,
     },
     {id: 2, title: "Incline Dumbbell Curl"},
     {id: 3, title: "One-Arm Cable Curl"},
