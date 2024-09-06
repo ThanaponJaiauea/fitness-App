@@ -17,7 +17,6 @@ export default function HeaderNavbar() {
   const currentDay = days[new Date().getDay() - 1]
 
   const [selectDay, setSelectDay] = useState(currentDay?.fullName)
-  console.log("selectDay:", selectDay)
 
   const navigate = useNavigate()
   const location = useLocation()

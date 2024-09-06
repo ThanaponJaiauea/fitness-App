@@ -32,11 +32,11 @@ export default function FridayPage() {
           วัน ศุกร์ : ต้นแขนด้านหน้าและด้านหลัง (Biceps & Triceps)
         </p>
       </div>
-      {/* 
+
       <FromTable
         data={data}
         dayKey="Friday"
-      /> */}
+      />
     </div>
   )
 }
