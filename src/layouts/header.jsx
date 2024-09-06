@@ -15,18 +15,18 @@ export default function HeaderNavbar() {
   ]
 
   const currentDay = days[new Date().getDay() - 1]
+  console.log("currentDay:", currentDay)
 
   const [selectDay, setSelectDay] = useState(currentDay)
-  console.log("selectDay:", selectDay)
 
   const navigate = useNavigate()
   const location = useLocation()
 
   useEffect(() => {
-    const currentPath = location.pathname.slice(1)
+    const currentPath = location?.pathname.slice(1)
 
-    if (currentPath !== currentDay.fullName) {
-      navigate(`/${currentDay.fullName}`, {replace: true})
+    if (currentPath !== currentDay?.fullName) {
+      navigate(`/${currentDay?.fullName}`, {replace: true})
     }
   }, [])
 
