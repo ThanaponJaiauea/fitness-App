@@ -15,15 +15,15 @@ export default function HeaderNavbar() {
   ]
 
   const currentDay = days[new Date().getDay() - 1]
-  console.log("currentDay:", currentDay)
 
-  const [selectDay, setSelectDay] = useState(currentDay)
+  const [selectDay, setSelectDay] = useState(currentDay?.fullName)
+  console.log("selectDay:", selectDay)
 
   const navigate = useNavigate()
   const location = useLocation()
 
   useEffect(() => {
-    const currentPath = location?.pathname.slice(1)
+    const currentPath = location.pathname.slice(1)
 
     if (currentPath !== currentDay?.fullName) {
       navigate(`/${currentDay?.fullName}`, {replace: true})
@@ -32,25 +32,27 @@ export default function HeaderNavbar() {
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="w-full flex flex-wrap items-center justify-center mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
         <div className="w-full md:block md:w-auto">
-          <ul className="w-full font-medium flex p-4 md:p-0 mt-4 flex items-center justify-center">
-            {days.map((el, idx) => (
-              <li key={idx}>
-                <Link
-                  to={`/${el?.fullName}`}
-                  onClick={() => setSelectDay(el?.fullName)}
-                  className={`py-2 px-3 ${
-                    selectDay.fullName === el?.fullName
-                      ? "text-blue-500"
-                      : el?.fullName
-                      ? "text-white hover:text-blue-500"
-                      : null
-                  }`}>
-                  {el?.shortName}
-                </Link>
-              </li>
-            ))}
+          <ul className="font-medium flex p-4 md:p-0">
+            {days
+              ?.filter((el) => el && el !== "Saturday" && el !== "Sunday")
+              .map((el, idx) => (
+                <li key={idx}>
+                  <Link
+                    to={`/${el.fullName}`}
+                    onClick={() => setSelectDay(el.fullName)}
+                    className={`py-2 px-3 ${
+                      selectDay === el.fullName
+                        ? "text-blue-500"
+                        : el.fullName
+                        ? "text-white hover:text-blue-500"
+                        : null
+                    }`}>
+                    {el.shortName}
+                  </Link>
+                </li>
+              ))}
           </ul>
         </div>
       </div>
