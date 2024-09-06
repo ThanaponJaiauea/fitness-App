@@ -2,7 +2,6 @@
 
 import {useEffect, useState} from "react"
 import {FaCheck} from "react-icons/fa"
-import {Link} from "react-router-dom"
 
 export default function FromTable({data, dayKey}) {
   const numberOfSets = 8
@@ -163,6 +162,10 @@ export default function FromTable({data, dayKey}) {
               </div>
 
               <div className="w-[90%] m-auto border-b-[1px]"></div>
+
+              <div className="text-center text-white text-xl pt-4">
+                <p>Step : {selectedExercise?.images?.length}</p>
+              </div>
 
               <div className="p-5 grid grid-cols-3 md:grid-cols-2 gap-4">
                 {selectedExercise?.images?.map((el, idx) => (
