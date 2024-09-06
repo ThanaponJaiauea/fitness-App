@@ -40,11 +40,11 @@ export default function HeaderNavbar() {
                 <Link
                   to={`/${el?.fullName}`}
                   onClick={() => setSelectDay(el?.fullName)}
-                  className={`py-2 px-3  ${
+                  className={`py-2 px-3 ${
                     selectDay.fullName === el?.fullName
-                      ? "dark:text-blue-500"
+                      ? "text-blue-500"
                       : el?.fullName
-                      ? "dark:text-white hover:dark:text-blue-500"
+                      ? "text-white hover:text-blue-500"
                       : null
                   }`}>
                   {el?.shortName}

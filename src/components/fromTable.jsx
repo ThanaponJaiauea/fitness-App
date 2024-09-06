@@ -8,7 +8,6 @@ export default function FromTable({data, dayKey}) {
 
   const [openSeeMore, setOpenSeeMore] = useState(false)
   const [selectedExercise, setSelectedExercise] = useState(null)
-  console.log("selectedExercise:", selectedExercise)
 
   // Load saved data from localStorage for Monday
   const initialInputs = () => {
