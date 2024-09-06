@@ -40,16 +40,16 @@ export default function HeaderNavbar() {
               .map((el, idx) => (
                 <li key={idx}>
                   <Link
-                    to={`/${el.fullName}`}
-                    onClick={() => setSelectDay(el.fullName)}
+                    to={`/${el?.fullName}`}
+                    onClick={() => setSelectDay(el?.fullName)}
                     className={`py-2 px-3 ${
-                      selectDay === el.fullName
+                      selectDay === el?.fullName
                         ? "text-blue-500"
-                        : el.fullName
+                        : el?.fullName
                         ? "text-white hover:text-blue-500"
                         : null
                     }`}>
-                    {el.shortName}
+                    {el?.shortName}
                   </Link>
                 </li>
               ))}
