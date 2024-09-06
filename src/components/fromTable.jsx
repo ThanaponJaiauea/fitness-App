@@ -47,7 +47,7 @@ export default function FromTable({data, dayKey}) {
 
   return (
     <div className="relative overflow-x-auto">
-      <table className="w-[90%] m-auto text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <table className="w-[90%] m-auto text-sm text-left text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
             <th
@@ -68,7 +68,7 @@ export default function FromTable({data, dayKey}) {
           </tr>
         </thead>
 
-        <tbody className="bg">
+        <tbody>
           {data.map((el) => (
             <tr
               key={el.id}
