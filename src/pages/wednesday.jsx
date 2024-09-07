@@ -1,16 +1,9 @@
 /** @format */
 
 import FromTable from "../components/fromTable"
+import {wednesdayData} from "../mocData/mocData"
 
 export default function Wednesday() {
-  const data = [
-    {id: 1, title: "Barbell Squat"},
-    {id: 2, title: "Leg Press"},
-    {id: 3, title: "Leg Extension"},
-    {id: 4, title: "Lying Leg Curl"},
-    {id: 5, title: "Barbell Deadlift"},
-    {id: 6, title: "Glute Bridge"},
-  ]
   return (
     <div className="w-full h-screen bg-red-200 flex flex-col items-center gap-10">
       <div className="mt-10">
@@ -20,7 +13,7 @@ export default function Wednesday() {
       </div>
 
       <FromTable
-        data={data}
+        data={wednesdayData}
         dayKey="Wednesday"
       />
     </div>

@@ -72,7 +72,7 @@ export default function FromTable({data, dayKey}) {
           {data.map((el) => (
             <tr
               key={el.id}
-              className="w-full bg-white dark:bg-gray-800">
+              className="w-full odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
               <th
                 scope="row"
                 className="flex flex-col items-start gap-2 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -83,7 +83,7 @@ export default function FromTable({data, dayKey}) {
                     setSelectedExercise(el)
                     setOpenSeeMore(true)
                   }}
-                  className="hover:text-red-400">
+                  className="text-red-500 underline">
                   how to play ?
                 </button>
               </th>

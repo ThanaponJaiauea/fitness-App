@@ -1,6 +1,330 @@
 /** @format */
 import video1 from "../videos/Minecraft.mp4"
 
+export const mondayData = [
+  {
+    id: 1,
+    title: "Barbell Bench Press",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 2,
+    title: "Incline Dumbbell Press",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 3,
+    title: "Dip",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 4,
+    title: "Cable Crossover",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 5,
+    title: "Lying Leg Raise",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 6,
+    title: "Crunch",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+]
+
+export const tuesdayData = [
+  {
+    id: 1,
+    title: "Wide-Grip Rear Pulldown",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 2,
+    title: "Pull-Up",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 3,
+    title: "T-Bar Row",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 4,
+    title: "Seated Cable Row",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 5,
+    title: "Face Pull",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 6,
+    title: "Dumbbell Shrug",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+]
+
+export const wednesdayData = [
+  {
+    id: 1,
+    title: "Barbell Squat",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 2,
+    title: "Leg Press",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 3,
+    title: "Leg Extension",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 4,
+    title: "Lying Leg Curl",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 5,
+    title: "Barbell Deadlift",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 6,
+    title: "Glute Bridge",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+]
+
+export const thursdayData = [
+  {
+    id: 1,
+    title: "Seated Dumbbell Press",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 2,
+    title: "Side Lateral Raise",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 3,
+    title: "Bent-Over Lateral Raise",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 4,
+    title: "Rope Front Raise",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 5,
+    title: "Standing Calf Raise",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+  {
+    id: 6,
+    title: "Seated Calf Raise",
+    images: [
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+    ],
+    videos: video1,
+  },
+]
+
 export const fridayData = [
   {
     id: 1,

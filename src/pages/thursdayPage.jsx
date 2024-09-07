@@ -1,17 +1,9 @@
 /** @format */
 
 import FromTable from "../components/fromTable"
+import {thursdayData} from "../mocData/mocData"
 
 export default function ThursdayPage() {
-  const data = [
-    {id: 1, title: "Seated Dumbbell Press"},
-    {id: 2, title: "Side Lateral Raise"},
-    {id: 3, title: "Bent-Over Lateral Raise"},
-    {id: 4, title: "Rope Front Raise"},
-    {id: 5, title: "Standing Calf Raise"},
-    {id: 6, title: "Seated Calf Raise"},
-  ]
-
   return (
     <div className="w-full h-screen bg-red-200 flex flex-col items-center gap-10">
       <div className="mt-10">
@@ -21,7 +13,7 @@ export default function ThursdayPage() {
       </div>
 
       <FromTable
-        data={data}
+        data={thursdayData}
         dayKey="Thursday"
       />
     </div>
