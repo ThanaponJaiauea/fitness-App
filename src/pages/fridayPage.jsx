@@ -1,7 +1,6 @@
 /** @format */
 
 import FromTable from "../components/fromTable"
-import video1 from "../videos/Minecraft.mp4"
 import {fridayData} from "../mocData/mocData"
 
 export default function FridayPage() {

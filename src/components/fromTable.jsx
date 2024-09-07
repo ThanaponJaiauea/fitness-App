@@ -46,8 +46,8 @@ export default function FromTable({data, dayKey}) {
   }
 
   return (
-    <div className="relative overflow-x-auto">
-      <table className="w-[90%] m-auto text-sm text-left text-gray-500 dark:text-gray-400">
+    <div className="w-[95%] overflow-x-auto">
+      <table className="w-full m-auto text-sm text-left text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
             <th
@@ -72,7 +72,7 @@ export default function FromTable({data, dayKey}) {
           {data.map((el) => (
             <tr
               key={el.id}
-              className="bg-white dark:bg-gray-800">
+              className="w-full bg-white dark:bg-gray-800">
               <th
                 scope="row"
                 className="flex flex-col items-start gap-2 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -95,14 +95,14 @@ export default function FromTable({data, dayKey}) {
                   <input
                     min="0"
                     max="15"
-                    className="text-center block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="w-[50px] text-center block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     value={inputs[el.id][index]}
                     onChange={(e) => handleChange(el.id, index, e.target.value)}
                   />
                 </td>
               ))}
 
-              <td className="px-6 py-4 text-center">
+              <td className="w-[50px] px-6 py-4 text-center">
                 {allSetsFilled(el.id) ? (
                   <i className="flex items-center justify-center text-green-600 text-lg">
                     <FaCheck />
@@ -115,7 +115,7 @@ export default function FromTable({data, dayKey}) {
       </table>
 
       {openSeeMore && selectedExercise && (
-        <div className="overflow-y-auto fixed top-0 right-0 left-0 flex justify-center items-center w-full md:inset-0 max-h-full bg-black bg-opacity-30 backdrop-blur-sm">
+        <div className="overflow-y-auto h-full fixed top-0 right-0 left-0 flex justify-center items-center w-full md:inset-0 max-h-full bg-black bg-opacity-30 backdrop-blur-sm">
           <div className="relative p-4 w-full max-w-2xl max-h-full">
             <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
@@ -166,7 +166,7 @@ export default function FromTable({data, dayKey}) {
                 <p>Step : {selectedExercise?.images?.length}</p>
               </div>
 
-              <div className="p-5 grid grid-cols-3 md:grid-cols-2 gap-4">
+              <div className="p-5 grid grid-cols-2 gap-4">
                 {selectedExercise?.images?.map((el, idx) => (
                   <div key={idx}>
                     <img
