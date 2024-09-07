@@ -102,7 +102,7 @@ export default function FromTable({data, dayKey}) {
                 </td>
               ))}
 
-              <td className="w-[50px] px-6 py-4 text-center">
+              <td className="px-6 py-4 text-center">
                 {allSetsFilled(el.id) ? (
                   <i className="flex items-center justify-center text-green-600 text-lg">
                     <FaCheck />
