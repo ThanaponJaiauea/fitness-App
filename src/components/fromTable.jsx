@@ -46,7 +46,7 @@ export default function FromTable({data, dayKey}) {
   }
 
   return (
-    <div className="w-[95%] overflow-x-auto">
+    <div className="w-[95%] md:w-[90%] overflow-x-auto">
       <table className="w-full m-auto text-sm text-left text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
@@ -95,7 +95,7 @@ export default function FromTable({data, dayKey}) {
                   <input
                     min="0"
                     max="15"
-                    className="w-[50px] text-center block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="w-[50px] md:w-full text-center block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     value={inputs[el.id][index]}
                     onChange={(e) => handleChange(el.id, index, e.target.value)}
                   />
