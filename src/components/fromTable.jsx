@@ -152,7 +152,8 @@ export default function FromTable({data, dayKey}) {
                   playsInline
                   muted
                   loop
-                  controls={true}>
+                  controls={true}
+                  preload="auto">
                   <source
                     src={selectedExercise?.videos}
                     type="video/mp4"
