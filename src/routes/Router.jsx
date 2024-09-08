@@ -1,14 +1,18 @@
 /** @format */
 
-import {createBrowserRouter, RouterProvider, Navigate} from "react-router-dom"
-import Layout from "../layouts/layout"
-import MondayPage from "../pages/mondayPage"
-import TuesdayPage from "../pages/tuesdayPage"
-import Wednesday from "../pages/wednesday"
-import ThursdayPage from "../pages/thursdayPage"
-import FridayPage from "../pages/fridayPage"
-import SaturdayPage from "../pages/saturdayPage"
-import SundayPage from "../pages/sundayPage"
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+import Layout from "../layouts/layout";
+import MondayPage from "../pages/mondayPage";
+import TuesdayPage from "../pages/tuesdayPage";
+import Wednesday from "../pages/wednesday";
+import ThursdayPage from "../pages/thursdayPage";
+import FridayPage from "../pages/fridayPage";
+import SaturdayPage from "../pages/saturdayPage";
+import SundayPage from "../pages/sundayPage";
 
 const days = [
   "Monday",
@@ -18,9 +22,9 @@ const days = [
   "Friday",
   "Saturday",
   "Sunday",
-]
+];
 
-const currentDay = days[new Date().getDay() - 1]
+const currentDay = days[new Date().getDay() - 1];
 
 const router = createBrowserRouter([
   {
@@ -28,12 +32,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: (
-          <Navigate
-            to={`/${currentDay}`}
-            replace
-          />
-        ),
+        element: <Navigate to={`/${currentDay}`} replace />,
       },
       {
         path: "/Monday",
@@ -65,8 +64,8 @@ const router = createBrowserRouter([
       },
     ],
   },
-])
+]);
 
 export default function Router() {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} />;
 }
