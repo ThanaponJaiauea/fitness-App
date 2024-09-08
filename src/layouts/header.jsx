@@ -29,7 +29,7 @@ export default function HeaderNavbar() {
   }, []);
 
   return (
-    <nav className="bg-green-200 border-gray-200 dark:bg-gray-900">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
         <div className="w-full md:block md:w-auto">
           <ul className="font-medium flex p-4 md:p-0">
@@ -44,7 +44,7 @@ export default function HeaderNavbar() {
                       selectDay === el?.fullName
                         ? "text-blue-500"
                         : el?.fullName
-                        ? "text-white hover:text-blue-500"
+                        ? "text-black hover:text-blue-500"
                         : null
                     }`}
                   >
