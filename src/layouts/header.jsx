@@ -1,41 +1,40 @@
 /** @format */
 
-import {useEffect, useState} from "react"
-import {Link, useNavigate, useLocation} from "react-router-dom"
+import { useEffect, useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export default function HeaderNavbar() {
   const days = [
-    {fullName: "Monday", shortName: "Mon"},
-    {fullName: "Tuesday", shortName: "Tue"},
-    {fullName: "Wednesday", shortName: "Wed"},
-    {fullName: "Thursday", shortName: "Thu"},
-    {fullName: "Friday", shortName: "Fri"},
-    {fullName: "Saturday", shortName: "Sat"},
-    {fullName: "Sunday", shortName: "Sun"},
-  ]
+    { fullName: "Sunday", shortName: "Sun" },
+    { fullName: "Monday", shortName: "Mon" },
+    { fullName: "Tuesday", shortName: "Tue" },
+    { fullName: "Wednesday", shortName: "Wed" },
+    { fullName: "Thursday", shortName: "Thu" },
+    { fullName: "Friday", shortName: "Fri" },
+    { fullName: "Saturday", shortName: "Sat" },
+  ];
+  const currentDay = days[new Date().getDay()];
 
-  const currentDay = days[new Date().getDay() - 1]
+  const [selectDay, setSelectDay] = useState(currentDay?.fullName);
 
-  const [selectDay, setSelectDay] = useState(currentDay?.fullName)
-
-  const navigate = useNavigate()
-  const location = useLocation()
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
-    const currentPath = location.pathname.slice(1)
+    const currentPath = location.pathname.slice(1);
 
     if (currentPath !== currentDay?.fullName) {
-      navigate(`/${currentDay?.fullName}`, {replace: true})
+      navigate(`/${currentDay?.fullName}`, { replace: true });
     }
-  }, [])
+  }, []);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-green-200 border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
         <div className="w-full md:block md:w-auto">
           <ul className="font-medium flex p-4 md:p-0">
             {days
-              ?.filter((el) => el && el !== "Saturday" && el !== "Sunday")
+              ?.filter(el => el && el !== "Saturday" && el !== "Sunday")
               .map((el, idx) => (
                 <li key={idx}>
                   <Link
@@ -47,7 +46,8 @@ export default function HeaderNavbar() {
                         : el?.fullName
                         ? "text-white hover:text-blue-500"
                         : null
-                    }`}>
+                    }`}
+                  >
                     {el?.shortName}
                   </Link>
                 </li>
@@ -56,5 +56,5 @@ export default function HeaderNavbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }

@@ -15,16 +15,16 @@ import SaturdayPage from "../pages/saturdayPage";
 import SundayPage from "../pages/sundayPage";
 
 const days = [
+  "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday",
 ];
 
-const currentDay = days[new Date().getDay() - 1];
+const currentDay = days[new Date().getDay()];
 
 const router = createBrowserRouter([
   {
