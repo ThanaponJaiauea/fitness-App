@@ -115,7 +115,7 @@ export default function FromTable({data, dayKey}) {
       </table>
 
       {openSeeMore && selectedExercise && (
-        <div className="overflow-y-auto fixed top-0 right-0 left-0 flex justify-center items-center w-full md:inset-0 max-h-full bg-black bg-opacity-30 backdrop-blur-sm">
+        <div className="overflow-y-auto h-full fixed top-0 right-0 left-0 flex justify-center items-center w-full md:inset-0 max-h-full bg-black bg-opacity-30 backdrop-blur-sm">
           <div className="relative p-4 w-full max-w-2xl max-h-full">
             <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
