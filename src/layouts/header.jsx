@@ -29,7 +29,7 @@ export default function HeaderNavbar() {
   }, [])
 
   return (
-    <nav className="dark:bg-gray-900 rounded-t-xl">
+    <nav className="bg-[#121828] rounded-t-xl">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4 ">
         <div className="w-full md:block md:w-auto">
           <ul className="font-medium flex p-4 md:p-0">

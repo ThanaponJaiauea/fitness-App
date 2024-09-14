@@ -48,7 +48,7 @@ export default function FromTable({data, dayKey}) {
   return (
     <div className="w-[95%] md:w-[90%] overflow-x-auto">
       <table className="w-full m-auto text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-50 bg-[#384152] dark:text-gray-400">
           <tr>
             <th
               scope="col"
@@ -72,7 +72,7 @@ export default function FromTable({data, dayKey}) {
           {data.map((el) => (
             <tr
               key={el.id}
-              className="w-full odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              className="w-full odd:bg-[#121828] even:bg-[#202938] border-b border-gray-700">
               <th
                 scope="row"
                 className="flex flex-col items-start gap-2 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -115,7 +115,7 @@ export default function FromTable({data, dayKey}) {
       </table>
 
       {openSeeMore && selectedExercise && (
-        <div className="overflow-y-auto h-full fixed top-0 right-0 left-0 flex justify-center items-center w-full md:inset-0 max-h-full bg-black bg-opacity-30 backdrop-blur-sm">
+        <div className="overflow-y-auto h-full z-[99999] fixed top-0 right-0 left-0 flex justify-center items-center w-full md:inset-0 max-h-full bg-black bg-opacity-30 backdrop-blur-sm">
           <div className="relative p-4 w-full max-w-2xl max-h-full">
             <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
               <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
