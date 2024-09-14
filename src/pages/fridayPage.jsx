@@ -1,16 +1,16 @@
 /** @format */
 
+import FromHeaderDay from "../components/fromHeaderDay"
 import FromTable from "../components/fromTable"
 import {fridayData} from "../mocData/mocData"
 
 export default function FridayPage() {
   return (
     <div className="w-full flex flex-col items-center gap-10">
-      <div className="mt-10">
-        <p className="font-bold text-xl">
-          วัน ศุกร์ : ต้นแขนด้านหน้าและด้านหลัง
-        </p>
-      </div>
+      <FromHeaderDay
+        bg="bg-blue-200"
+        title="วัน ศุกร์ : ต้นแขนด้านหน้าและด้านหลัง"
+      />
 
       <FromTable
         data={fridayData}
