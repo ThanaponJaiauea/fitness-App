@@ -58,7 +58,7 @@ export default function FromTable({data, dayKey}) {
     <div className="w-full h-[720px] flex items-center justify-center">
       <div className="w-[95%] h-full md:w-[90%] overflow-x-auto">
         <table className="w-full  h-full m-auto text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50 bg-[#384152] dark:text-gray-400">
+          <thead className="text-xs text-gray-700 uppercase bg-gray-50 bg-gray-200">
             <tr>
               <th
                 scope="col"
