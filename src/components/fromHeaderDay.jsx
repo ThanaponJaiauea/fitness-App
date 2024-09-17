@@ -9,8 +9,7 @@ export default function FromHeaderDay({bg, title}) {
     <>
       <div
         className={`${bg} w-full h-[60px] flex items-center justify-center gap-2`}>
-        {/* <p className="font-bold text-xl">{title}</p> */}
-        <p className="font-bold text-xl">day</p>
+        <p className="font-bold text-xl">{title}</p>
 
         {completedExercises && (
           <i className="flex items-center justify-center text-red-600">
