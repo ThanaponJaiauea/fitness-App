@@ -5,6 +5,7 @@ import {Link, useNavigate, useLocation} from "react-router-dom"
 
 export default function HeaderNavbar() {
   const days = [
+    {fullName: "Photo", shortName: "photo"},
     {fullName: "Sunday", shortName: "Sun"},
     {fullName: "Monday", shortName: "Mon"},
     {fullName: "Tuesday", shortName: "Tue"},

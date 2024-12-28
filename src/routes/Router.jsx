@@ -13,6 +13,7 @@ import ThursdayPage from "../pages/thursdayPage";
 import FridayPage from "../pages/fridayPage";
 import SaturdayPage from "../pages/saturdayPage";
 import SundayPage from "../pages/sundayPage";
+import PhotoEditorPage from "../pages/photoEditorPage";
 
 const days = [
   "Sunday",
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Navigate to={`/${currentDay}`} replace />,
+      },
+      {
+        path: "/Photo",
+        element: <PhotoEditorPage />,
       },
       {
         path: "/Monday",
